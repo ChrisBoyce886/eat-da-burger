@@ -1,1 +1,67 @@
-<p>Successful connection</p>
+
+<div class="container">
+
+    {{!-- Row 1  --}}
+    <div class="row justify-content-center" id="row1">
+        <div class="col-lg-12 font-effect-scuffed-steel">
+            <h1 id="pageHeader">EAT-DA-BURGER</h1>
+        </div>
+    </div>
+
+    {{!-- Row 2 --}}
+    <div class="row justify-content-center" id="row2">        
+        <div class="col-lg-4 text-center form-inline">
+            <form action="/burgers/insertOne" method="POST" id="new-burger-form">
+                <input type="text" name="burger_name" class="form-control pull-right" id="enter-burger" placeholder="Create a new burger!">
+                <button type="submit" class="btn btn-default" id="text-enter-button">
+                    Add Burger
+                </button>                
+            </form>
+        </div>
+    </div>
+
+    {{!-- Row 3 --}}
+    <div class="row justify-content-between" id="row3">
+        {{!-- BURGER LIST COLUMN --}}   
+        <div class="col-lg-5" id="burger-column">
+            {{!-- HEADER --}}
+            <div class="font-effect-scuffed-steel">
+                <h1 id="burger-list-header"><u>BURGER LIST</u></h1>
+            </div>
+            <div>
+                <ul id="burger-list">
+                    {{#each burger_data}}
+                    {{#unless this.devoured}}               
+                        <div class="text-center">
+                            <form method="POST" action="/burgers/updateOne?_method=PUT" class="button-size form-inline" id="burger-list-form">
+                                <input type="hidden" name="burger_id" type="text" value={{this.id}}>
+                                <button type="submit" class="btn btn-default" id="devourBtn">DEVOUR IT</button> 
+                                <p id="burgerName">{{this.id}}. {{this.burger_name}}</p>                                
+                            </form>   
+                                {{/unless}}
+                                {{/each}}
+                        </ul>   
+                </div>                         
+            </div>
+
+        {{!-- DEVOURED LIST COLUMN--}}
+        <div class="col-lg-5">
+            {{!-- HEADER --}}
+            <div class="font-effect-scuffed-steel">
+                <h1 id="devoured-header"><u>DEVOURED</u></h1>
+            </div>
+            <div class="text-center" id="devoured-list">
+                {{#each burger_data}}
+                {{#if this.devoured}}
+                    <p id="read-only-boxes">{{this.id}}. {{this.burger_name}}</p>
+                {{/if}}
+                {{/each}}
+            </div>               
+        </div>
+    </div>
+</div>
+
+        
+        
+      
+

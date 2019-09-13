@@ -20,7 +20,8 @@ Example: `var PORT = process.env.PORT || 3000`
 
 * The application allows the user to see "Burgers available" and "Burgers already devoured" which are stored on a MySQL database.
 * The user can then add a burger to the list to be "devoured". 
-* The application makes use of Node, Express, Express-Handlebars, an ORM, MySQL, and several NPM packages. 
+* The application makes use of Node, Express, Express-Handlebars, an ORM, MySQL, and several NPM packages
+     * See MVC file structure below
      
 ## Demonstration gif:
 

@@ -26,7 +26,7 @@ Example: `var PORT = process.env.PORT || 3000`
 
 * This gif demonstrates how to add burgers and "devour" burgers on the application. 
    
-![Eat-Da-Burger.Gif]( "eat-da-burger.gif")
+![Eat-Da-Burger.Gif](public/assets/images/eat-da-burger.gif "eat-da-burger.gif")
 
      
 ## Built With

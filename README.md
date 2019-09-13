@@ -57,7 +57,7 @@ Example: `var PORT = process.env.PORT || 3000`
 │   └── burgers_controller.js
 │
 ├── db
-|   |──schema.sql
+|   |── schema.sql
 |   └── seeds.sql
 |
 ├── models

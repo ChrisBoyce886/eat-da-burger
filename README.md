@@ -1,7 +1,7 @@
 # EAT-DA-BURGER
 
 The purpose of *Eat-Da-Burger* is to showcase the Full Stack implementation of [Node.js](https://nodejs.org/en/), 
-[Express](https://expressjs.com/), [Handlebars](https://www.npmjs.com/package/express-handlebars), an ORM, and [MySQL](https://www.mysql.com/). The application allows the user 
+[Express](https://expressjs.com/), [Handlebars](https://www.npmjs.com/package/express-handlebars), an ORM, and [MySQL](https://www.mysql.com/). 
 
 Click [here](https://eat--da--burger.herokuapp.com/) to view the application!
 
@@ -20,7 +20,7 @@ Example: `var PORT = process.env.PORT || 3000`
 
 * The application allows the user to see "Burgers available" and "Burgers already devoured" which are stored on a MySQL database.
 * The user can then add a burger to the list to be "devoured". 
-* The application makes use of Node, Express, Express-Handlebars, an ORM, MySQL, and several NPM packages
+* The application makes use of Node, Express, Express-Handlebars, an ORM, MySQL, and several NPM packages.
      * See MVC file structure below
      
 ## Demonstration gif:

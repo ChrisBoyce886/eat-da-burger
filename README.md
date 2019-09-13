@@ -44,3 +44,41 @@ Example: `var PORT = process.env.PORT || 3000`
 * [mysql](https://www.npmjs.com/package/mysql)
 * [Body-Parser](https://www.npmjs.com/package/body-parser)
 * [Method Override](https://www.npmjs.com/package/method-override)
+
+## File Structure 
+
+```
+.
+├── config
+│   |── connection.js
+|   └── orm.js
+│ 
+├── controllers
+│   └── burgers_controller.js
+│
+├── db
+|   |──schema.sql
+|   └── seeds.sql
+|
+├── models
+│   └── burger.js
+│ 
+├── node_modules
+│ 
+├── public
+│   └── assets
+│       ├── css
+│       │   └── style.css
+│       └── imgages
+│           └── ...      
+│
+├── views
+|    ├── index.handlebars
+|    └── layouts
+|         └── main.handlebars
+|
+├── package.json
+|
+├── server.js
+```
+

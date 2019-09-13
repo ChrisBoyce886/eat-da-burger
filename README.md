@@ -1,6 +1,6 @@
 # EAT-DA-BURGER
 
-The purpose of *Eat-Da-Burger* is to showcase the Full Stack application of [Node.js](https://nodejs.org/en/), 
+The purpose of *Eat-Da-Burger* is to showcase the Full Stack implementation of [Node.js](https://nodejs.org/en/), 
 [Express](https://expressjs.com/), [Handlebars](https://www.npmjs.com/package/express-handlebars), an ORM, and [MySQL](https://www.mysql.com/). The application allows the user 
 
 Click [here](https://eat--da--burger.herokuapp.com/) to view the application!

@@ -15,7 +15,7 @@ var orm = {
     },
     // Create SQL query to UPDATE selected data to "true" within our database
     updateOne: function(tableInput, condition, callback){
-        var queryString2 = "UPDATE " + tableInput + " SET devoured=true WHERE id=" + condition + ";"
+        var queryString2 = "UPDATE " + tableInput + " SET devoured=true WHERE id=" + condition + ";";
         connection.query(queryString2, function(error, result) {
             if(error) {
                 throw error;
@@ -24,8 +24,8 @@ var orm = {
         })
     },
     // Create SQL query to INSERT new data into our databases
-    insertOne: function(tableInput, value, callback){
-        var queryString3 = ('INSERT INTO ' + tableInput + " (burger_name) VALUES ('" + value + "');")
+    insertOne: function(value, callback){
+        var queryString3 = "INSERT INTO burgers (burger_name) VALUES ('" + value + "');";
         connection.query(queryString3, function(error, result){
             if (error){
                 throw error

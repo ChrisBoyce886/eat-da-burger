@@ -16,7 +16,7 @@ app.engine("handlebars", expressHandlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Insert code from Body-Parser npm page 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text({ type: "text/html" }));
 app.use(bodyParser.json({ type: "application/*+json" }));
 app.use(bodyParser.raw({ type: "application/vnd.custom-type" }));

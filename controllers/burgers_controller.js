@@ -23,7 +23,7 @@ router.put("/burgers/updateOne", function(req, res){
 
 // Set up Route to INSERT new data by user into database 
 router.post("/burgers/insertOne", function(req, res){
-    burger.insertOne(req.body.burger_name, function(result){
+    burger.insertOne(req.body.burger_name, function(result){        
         res.redirect("/");
     });
 });

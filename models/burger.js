@@ -14,7 +14,7 @@ var burger = {
     },
 
     insertOne: function(name, callback){
-        orm.insertOne("burgers", name, callback);
+        orm.insertOne(name, callback);
     }
 };
 
